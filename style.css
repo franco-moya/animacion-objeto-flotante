@@ -1,0 +1,34 @@
+.contenedor {
+  height: 20px;
+  width: 50px;
+}
+
+img {
+  object-fit: fill;
+  height: auto;
+  width: 100px;
+  margin-left: 200px;
+  margin-top: 200px;
+  scale: 2;
+  background: transparent;
+
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+
+  /*border-bottom: 8px solid #ff9411;*/
+  border-radius: 4px;
+  padding: 4px;
+
+  animation-name: float-object;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  animation-direction: alternate;
+}
+
+
+@keyframes float-object {
+  to {
+    transform: translate(0, 20px);
+  }
+}
